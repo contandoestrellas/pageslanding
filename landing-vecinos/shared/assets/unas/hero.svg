@@ -1,0 +1,35 @@
+<!-- SVG Placeholder: Nails Hero -->
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="nails-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fce7f3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fbcfe8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#nails-grad)"/>
+  
+  <!-- Hands with nails -->
+  <g transform="translate(800, 400)">
+    <!-- Left hand -->
+    <ellipse cx="-250" cy="50" rx="80" ry="150" fill="#f5d5e3" opacity="0.9"/>
+    <rect x="-270" y="-100" width="35" height="120" rx="10" fill="#f4a6d3" opacity="0.8"/>
+    <rect x="-220" y="-120" width="35" height="140" rx="10" fill="#e91e63" opacity="0.8"/>
+    <rect x="-170" y="-110" width="35" height="130" rx="10" fill="#f4a6d3" opacity="0.8"/>
+    <rect x="-120" y="-100" width="35" height="120" rx="10" fill="#e91e63" opacity="0.8"/>
+    
+    <!-- Right hand -->
+    <ellipse cx="250" cy="50" rx="80" ry="150" fill="#f5d5e3" opacity="0.9"/>
+    <rect x="220" y="-100" width="35" height="120" rx="10" fill="#e91e63" opacity="0.8"/>
+    <rect x="270" y="-120" width="35" height="140" rx="10" fill="#f4a6d3" opacity="0.8"/>
+    <rect x="320" y="-110" width="35" height="130" rx="10" fill="#e91e63" opacity="0.8"/>
+    <rect x="370" y="-100" width="35" height="120" rx="10" fill="#f4a6d3" opacity="0.8"/>
+    
+    <!-- Sparkles -->
+    <circle cx="-220" cy="-150" r="15" fill="#ffc0cb" opacity="0.6"/>
+    <circle cx="270" cy="-160" r="15" fill="#ffc0cb" opacity="0.6"/>
+  </g>
+  
+  <text x="800" y="750" font-family="serif" font-size="48" fill="#e91e63" text-anchor="middle" opacity="0.3">
+    BellaManos Studio
+  </text>
+</svg>

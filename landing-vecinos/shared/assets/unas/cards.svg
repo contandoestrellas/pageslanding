@@ -1,0 +1,37 @@
+<!-- SVG Placeholder: Nails Design Gallery -->
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="nail-design-1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4a6d3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5d5e3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="nail-design-2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e91e63;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f4a6d3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="nail-design-3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffc0cb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fff0f5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Nail Design 1: French Ombré -->
+  <rect x="50" y="50" width="350" height="350" rx="8" fill="#faf3f7"/>
+  <rect x="80" y="80" width="290" height="280" rx="6" fill="url(#nail-design-1)"/>
+  <circle cx="225" cy="200" r="8" fill="white" opacity="0.4"/>
+  <text x="225" y="370" font-family="sans-serif" font-size="18" fill="#333" text-anchor="middle" font-weight="bold">French Ombré</text>
+
+  <!-- Nail Design 2: Glitter Pink -->
+  <rect x="425" y="50" width="350" height="350" rx="8" fill="#faf3f7"/>
+  <rect x="455" y="80" width="290" height="280" rx="6" fill="url(#nail-design-2)"/>
+  <circle cx="600" cy="150" r="6" fill="#ffd700" opacity="0.6"/>
+  <circle cx="625" cy="170" r="5" fill="#fdff47" opacity="0.5"/>
+  <circle cx="580" cy="200" r="7" fill="#ffeb3b" opacity="0.6"/>
+  <text x="600" y="370" font-family="sans-serif" font-size="18" fill="#333" text-anchor="middle" font-weight="bold">Glitter Pink</text>
+
+  <!-- Nail Design 3: Pastel Marble -->
+  <rect x="800" y="50" width="350" height="350" rx="8" fill="#faf3f7"/>
+  <rect x="830" y="80" width="290" height="280" rx="6" fill="url(#nail-design-3)"/>
+  <path d="M 900 150 Q 920 160 940 150 T 980 150" stroke="#e91e63" stroke-width="2" fill="none" opacity="0.4"/>
+  <text x="975" y="370" font-family="sans-serif" font-size="18" fill="#333" text-anchor="middle" font-weight="bold">Pastel Marble</text>
+</svg>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sushi Deluxe - Comida Japonesa Premium</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">🍣 Sushi Deluxe</div>
+      <ul class="nav-menu">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#precios">Precios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Sushi Deluxe</h1>
+      <p>Experimenta la auténtica cocina japonesa con los mejores ingredientes</p>
+      <button class="btn-primary">Hacer Pedido</button>
+    </div>
+    <div class="hero-image">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="90" fill="#FF6B6B"/>
+        <circle cx="100" cy="100" r="80" fill="#FFA07A"/>
+        <ellipse cx="100" cy="60" rx="30" ry="40" fill="white"/>
+        <circle cx="85" cy="55" r="5" fill="black"/>
+        <circle cx="115" cy="55" r="5" fill="black"/>
+        <path d="M 85 75 Q 100 85 115 75" stroke="black" stroke-width="2" fill="none"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Servicios/Menú Section -->
+  <section id="menu" class="menu">
+    <h2>Nuestro Menú</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <div class="menu-icon">🍣</div>
+        <h3>Roll Tempura</h3>
+        <p>Camarones tempura con aguacate y salsa spicy</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-icon">🍤</div>
+        <h3>Nigiri Especial</h3>
+        <p>Camarones frescos sobre arroz de sushi</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-icon">🥒</div>
+        <h3>Sashimi Selection</h3>
+        <p>Selección premium de salmón y atún</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-icon">🍚</div>
+        <h3>Chirashi Bowl</h3>
+        <p>Arroz con variedad de ingredientes frescos</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-icon">🍜</div>
+        <h3>Ramen Clásico</h3>
+        <p>Caldo tradicional con fideos frescos</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-icon">🥟</div>
+        <h3>Gyoza Frito</h3>
+        <p>Dumplings crujientes con salsa especial</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Precios Section -->
+  <section id="precios" class="precios">
+    <h2>Nuestros Precios</h2>
+    <div class="precios-grid">
+      <div class="precio-card">
+        <h3>Rolls Básicos</h3>
+        <p class="precio">$4.990</p>
+        <ul>
+          <li>✓ Roll California</li>
+          <li>✓ Roll Philadelphia</li>
+          <li>✓ Roll Vegetariano</li>
+          <li>✓ 6 piezas por roll</li>
+        </ul>
+      </div>
+      <div class="precio-card destacado">
+        <h3>Rolls Premium</h3>
+        <p class="precio">$7.990</p>
+        <ul>
+          <li>✓ Roll Tempura</li>
+          <li>✓ Roll Especial</li>
+          <li>✓ Ingredientes premium</li>
+          <li>✓ 8 piezas por roll</li>
+        </ul>
+      </div>
+      <div class="precio-card">
+        <h3>Combo Familiar</h3>
+        <p class="precio">$24.990</p>
+        <ul>
+          <li>✓ 3 rolls diferentes</li>
+          <li>✓ Tempura de camarones</li>
+          <li>✓ Bebida incluida</li>
+          <li>✓ Para 2-3 personas</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto Section -->
+  <section id="contacto" class="contacto">
+    <div class="contacto-container">
+      <h2>Contáctanos</h2>
+      <div class="contacto-grid">
+        <div class="contacto-info">
+          <h3>Información de Contacto</h3>
+          <p><strong>Dirección:</strong> Av. Principal 123, Santiago</p>
+          <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
+          <p><strong>Email:</strong> info@sushideluxe.cl</p>
+          <p><strong>Horario:</strong> Lunes a Domingo, 12:00 - 22:00</p>
+        </div>
+        <div class="contacto-form">
+          <form>
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu email" required>
+            <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+            <button type="submit" class="btn-primary">Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/56912345678?text=Hola%20Sushi%20Deluxe%20Me%20gustaría%20hacer%20un%20pedido" class="whatsapp-btn" target="_blank">
+    <svg width="30" height="30" viewBox="0 0 30 30" fill="white">
+      <path d="M26.5 2.5C25 1 22.8 0 20.2 0 13.4 0 8 5.4 8 12.2c0 2.1.6 4.2 1.6 6L2.5 28l10.1-3.3c1.7.9 3.7 1.4 5.7 1.4 6.8 0 12.2-5.4 12.2-12.2 0-3.2-1.3-6.3-3.6-8.5zm-6.1 18.4c-1.8 0-3.6-.5-5.1-1.3l-.4-.2-3.8 1.2 1.3-3.8-.3-.4c-.9-1.5-1.4-3.3-1.4-5.1 0-5.7 4.7-10.4 10.4-10.4 2.8 0 5.4 1.1 7.4 3 2 2 3.1 4.6 3.1 7.4 0 5.7-4.7 10.4-10.4 10.4zm5.7-7.8c-.3-.2-2.1-1-2.4-1.1-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.2-.2.2-.4.2-.7.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.5-1.7-1.6-2-.2-.3 0-.4.1-.5.1-.1.3-.3.4-.4.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.3-1-.4-1.3-.1-.3-.3-.3-.4-.3h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5 0 1.5.6 2.9 1.7 4 1.2 1.2 2.8 1.9 4.5 1.9.9 0 1.7-.1 2.5-.4 1.6-.8 2.7-2.4 2.7-4.1 0-.8-.3-1.5-.8-2z"/>
+    </svg>
+  </a>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

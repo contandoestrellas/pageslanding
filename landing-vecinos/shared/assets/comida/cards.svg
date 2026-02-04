@@ -1,0 +1,51 @@
+<!-- SVG Placeholder: Pastries & Desserts -->
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cake-grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4a574;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b6914;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cake-grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5d5e3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4a5d4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cake-grad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff8dc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffefd5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Chocolate Cake -->
+  <rect x="50" y="50" width="350" height="350" rx="8" fill="#faf3ef"/>
+  <rect x="85" y="120" width="280" height="220" rx="6" fill="url(#cake-grad1)"/>
+  <ellipse cx="225" cy="90" rx="140" ry="40" fill="#8b4513"/>
+  <circle cx="190" cy="140" r="15" fill="#ffb6c1" opacity="0.6"/>
+  <circle cx="225" cy="155" r="15" fill="#ffb6c1" opacity="0.6"/>
+  <circle cx="260" cy="140" r="15" fill="#ffb6c1" opacity="0.6"/>
+  <text x="225" y="370" font-family="sans-serif" font-size="18" fill="#333" text-anchor="middle" font-weight="bold">Torta de Chocolate</text>
+  <text x="225" y="390" font-family="sans-serif" font-size="14" fill="#666" text-anchor="middle">$24.900</text>
+
+  <!-- Macaron Box -->
+  <rect x="425" y="50" width="350" height="350" rx="8" fill="#faf3ef"/>
+  <rect x="460" y="130" width="280" height="180" rx="6" fill="url(#cake-grad2)"/>
+  <circle cx="520" cy="160" r="25" fill="#ffc0cb"/>
+  <circle cx="570" cy="150" r="25" fill="#f4a6d3"/>
+  <circle cx="620" cy="160" r="25" fill="#d4a5d4"/>
+  <circle cx="670" cy="175" r="25" fill="#f5d5e3"/>
+  <circle cx="540" cy="200" r="25" fill="#e8d4f1"/>
+  <circle cx="600" cy="210" r="25" fill="#ffd1dc"/>
+  <circle cx="650" cy="205" r="25" fill="#ffb6d9"/>
+  <text x="600" y="370" font-family="sans-serif" font-size="18" fill="#333" text-anchor="middle" font-weight="bold">Caja de Macarons</text>
+  <text x="600" y="390" font-family="sans-serif" font-size="14" fill="#666" text-anchor="middle">$18.500</text>
+
+  <!-- Fruit Tart -->
+  <rect x="800" y="50" width="350" height="350" rx="8" fill="#faf3ef"/>
+  <ellipse cx="975" cy="160" rx="125" ry="60" fill="url(#cake-grad3)"/>
+  <circle cx="920" cy="140" r="18" fill="#ff6347"/>
+  <circle cx="950" cy="125" r="18" fill="#ff69b4"/>
+  <circle cx="975" cy="120" r="18" fill="#ff1493"/>
+  <circle cx="1000" cy="125" r="18" fill="#ffb6c1"/>
+  <circle cx="1020" cy="140" r="18" fill="#ff6347"/>
+  <text x="975" y="370" font-family="sans-serif" font-size="18" fill="#333" text-anchor="middle" font-weight="bold">Tarta de Frutas</text>
+  <text x="975" y="390" font-family="sans-serif" font-size="14" fill="#666" text-anchor="middle">$19.900</text>
+</svg>

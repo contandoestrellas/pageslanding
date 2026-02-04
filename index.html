@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Pages - Catálogo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      margin-bottom: 50px;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 50px rgba(0,0,0,0.3);
+    }
+
+    .card-header {
+      height: 200px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3em;
+    }
+
+    .card-header.sushi {
+      background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+    }
+
+    .card-header.unas {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    }
+
+    .card-header.comida {
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    }
+
+    .card-content {
+      padding: 30px;
+    }
+
+    .card-content h2 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 12px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: opacity 0.3s ease;
+      border: none;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    .btn.sushi {
+      background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+    }
+
+    .btn.unas {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    }
+
+    .btn.comida {
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8em;
+        margin-bottom: 30px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🍴 Nuestras Landing Pages</h1>
+    <div class="grid">
+      <div class="card">
+        <div class="card-header sushi">🍣</div>
+        <div class="card-content">
+          <h2>Sushi Deluxe</h2>
+          <p>Experiencia premium de comida japonesa con los mejores ingredientes del mercado.</p>
+          <a href="./sushi/" class="btn sushi">Ver Landing Page</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header unas">💅</div>
+        <div class="card-content">
+          <h2>Uñas & Beauty</h2>
+          <p>Salón de belleza especializado en uñas con productos de alta calidad y diseños únicos.</p>
+          <a href="./unas/" class="btn unas">Ver Landing Page</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header comida">🍽️</div>
+        <div class="card-content">
+          <h2>Comida Casera</h2>
+          <p>Recetas tradicionales preparadas con amor y los mejores ingredientes locales.</p>
+          <a href="./comida/" class="btn comida">Ver Landing Page</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

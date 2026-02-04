@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comida Casera - Recetas Tradicionales</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">🍽️ Comida Casera</div>
+      <ul class="nav-menu">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#precios">Precios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Comida Casera</h1>
+      <p>Sabores auténticos preparados con amor y los mejores ingredientes locales</p>
+      <button class="btn-primary">Pedir Ahora</button>
+    </div>
+    <div class="hero-image">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="foodGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#4FACFE;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#00F2FE;stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        <ellipse cx="100" cy="120" rx="70" ry="55" fill="#D4A574"/>
+        <circle cx="100" cy="80" r="50" fill="url(#foodGrad)"/>
+        <ellipse cx="75" cy="75" rx="20" ry="25" fill="#90EE90"/>
+        <ellipse cx="125" cy="85" rx="18" ry="22" fill="#FFD700"/>
+        <polygon points="100,50 115,65 85,65" fill="#FF6347"/>
+        <circle cx="85" cy="95" r="8" fill="#FF6347"/>
+        <circle cx="115" cy="92" r="7" fill="#FFD700"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Menú Section -->
+  <section id="menu" class="menu">
+    <h2>Nuestro Menú</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <div class="menu-icon">🍲</div>
+        <h3>Cazuela de Ave</h3>
+        <p>Pollo tierno con papas, choclo y caldo casero</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-icon">🥩</div>
+        <h3>Pastel de Choclo</h3>
+        <p>Carne molida y choclo cremoso al horno</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-icon">🥘</div>
+        <h3>Empanadas Fritas</h3>
+        <p>Rellenas de carne, queso o verduras frescas</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-icon">🍛</div>
+        <h3>Carne a la Olla</h3>
+        <p>Carne de res con verduras en caldo tradicional</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-icon">🌽</div>
+        <h3>Humita dulce</h3>
+        <p>Choclo molido con queso y pasas tradicionales</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-icon">🍚</div>
+        <h3>Arroz con Pollo</h3>
+        <p>Arroz blanco con pollo guisado y verduras</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Precios Section -->
+  <section id="precios" class="precios">
+    <h2>Nuestros Precios</h2>
+    <div class="precios-grid">
+      <div class="precio-card">
+        <h3>Plato Individual</h3>
+        <p class="precio">$4.990</p>
+        <ul>
+          <li>✓ Porción generosa</li>
+          <li>✓ Entrada o ensalada</li>
+          <li>✓ Bebida pequeña</li>
+          <li>✓ 1 persona</li>
+        </ul>
+      </div>
+      <div class="precio-card destacado">
+        <h3>Combo Pareja</h3>
+        <p class="precio">$17.990</p>
+        <ul>
+          <li>✓ 2 platos principales</li>
+          <li>✓ 2 entradas</li>
+          <li>✓ 2 bebidas</li>
+          <li>✓ Postre compartido</li>
+        </ul>
+      </div>
+      <div class="precio-card">
+        <h3>Fiesta Familiar</h3>
+        <p class="precio">$39.990</p>
+        <ul>
+          <li>✓ 4-5 platos distintos</li>
+          <li>✓ Entrada variada</li>
+          <li>✓ Bebidas x 4</li>
+          <li>✓ Postres incluidos</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto Section -->
+  <section id="contacto" class="contacto">
+    <div class="contacto-container">
+      <h2>Contáctanos para tu Pedido</h2>
+      <div class="contacto-grid">
+        <div class="contacto-info">
+          <h3>Información de Contacto</h3>
+          <p><strong>Dirección:</strong> Calle Principal 789, San Antonio</p>
+          <p><strong>Teléfono:</strong> +56 9 5555 6666</p>
+          <p><strong>Email:</strong> pedidos@comidacasera.cl</p>
+          <p><strong>Horario:</strong> Lunes a Domingo, 11:00 - 21:00</p>
+        </div>
+        <div class="contacto-form">
+          <form>
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu email" required>
+            <textarea placeholder="Tu pedido o consulta" rows="5" required></textarea>
+            <button type="submit" class="btn-primary">Enviar Pedido</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/56955556666?text=Hola%20Comida%20Casera%20Quisiera%20hacer%20un%20pedido" class="whatsapp-btn" target="_blank">
+    <svg width="30" height="30" viewBox="0 0 30 30" fill="white">
+      <path d="M26.5 2.5C25 1 22.8 0 20.2 0 13.4 0 8 5.4 8 12.2c0 2.1.6 4.2 1.6 6L2.5 28l10.1-3.3c1.7.9 3.7 1.4 5.7 1.4 6.8 0 12.2-5.4 12.2-12.2 0-3.2-1.3-6.3-3.6-8.5zm-6.1 18.4c-1.8 0-3.6-.5-5.1-1.3l-.4-.2-3.8 1.2 1.3-3.8-.3-.4c-.9-1.5-1.4-3.3-1.4-5.1 0-5.7 4.7-10.4 10.4-10.4 2.8 0 5.4 1.1 7.4 3 2 2 3.1 4.6 3.1 7.4 0 5.7-4.7 10.4-10.4 10.4zm5.7-7.8c-.3-.2-2.1-1-2.4-1.1-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.2-.2.2-.4.2-.7.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.5-1.7-1.6-2-.2-.3 0-.4.1-.5.1-.1.3-.3.4-.4.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.3-1-.4-1.3-.1-.3-.3-.3-.4-.3h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5 0 1.5.6 2.9 1.7 4 1.2 1.2 2.8 1.9 4.5 1.9.9 0 1.7-.1 2.5-.4 1.6-.8 2.7-2.4 2.7-4.1 0-.8-.3-1.5-.8-2z"/>
+    </svg>
+  </a>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

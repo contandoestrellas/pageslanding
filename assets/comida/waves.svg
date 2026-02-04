@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wave-comida" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4FACFE;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#00F2FE;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <path d="M0,200 Q100,100 200,200 T400,200 L400,400 L0,400 Z" fill="url(#wave-comida)"/>
+  <path d="M0,240 Q100,180 200,240 T400,240 L400,400 L0,400 Z" fill="#4FACFE" opacity="0.3"/>
+</svg>

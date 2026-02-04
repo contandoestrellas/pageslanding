@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Pages - Vecinos</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .container {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      padding: 4rem 2rem;
+      text-align: center;
+      max-width: 800px;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+    }
+    p {
+      color: #666;
+      margin-bottom: 3rem;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: #f8f9fa;
+      border-radius: 12px;
+      padding: 2rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: #667eea;
+      box-shadow: 0 12px 24px rgba(102, 126, 234, 0.15);
+    }
+    .card-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .card-title {
+      color: #333;
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    .card-desc {
+      color: #666;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+    .card-btn {
+      display: inline-block;
+      background: #667eea;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+    .card:hover .card-btn {
+      background: #764ba2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🏢 Landing Pages Vecinos</h1>
+    <p>Tres landing pages premium diseñadas para negocios locales. Elige la que quieras visitar:</p>
+    
+    <div class="grid">
+      <a href="/sushi/index.html" class="card">
+        <div class="card-icon">🍣</div>
+        <div class="card-title">SakuraRolls</div>
+        <div class="card-desc">Sushi Premium a Domicilio</div>
+        <div class="card-btn">Ver Página</div>
+      </a>
+
+      <a href="/unas/index.html" class="card">
+        <div class="card-icon">💅</div>
+        <div class="card-title">BellaManos</div>
+        <div class="card-desc">Diseño de Uñas Premium</div>
+        <div class="card-btn">Ver Página</div>
+      </a>
+
+      <a href="/comida/index.html" class="card">
+        <div class="card-icon">🍰</div>
+        <div class="card-title">Casa Dulce</div>
+        <div class="card-desc">Repostería Artesanal</div>
+        <div class="card-btn">Ver Página</div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
