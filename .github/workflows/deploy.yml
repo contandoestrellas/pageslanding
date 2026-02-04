@@ -25,7 +25,8 @@ jobs:
         cache: 'npm'
     
     - name: Install dependencies
-      run: npm ci
+      # Use `npm install` instead of `npm ci` because repo does not include a lockfile
+      run: npm install --no-audit --no-fund
     
     - name: Generate assets
       run: npm run generate-assets
