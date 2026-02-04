@@ -18,7 +18,6 @@ pids/
 node_modules/
 npm-shrinkwrap.json
 yarn.lock
-package-lock.json
 
 # IDEs
 .vscode/
