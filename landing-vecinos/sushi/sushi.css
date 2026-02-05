@@ -32,6 +32,47 @@ body {
   line-height: 1.6;
 }
 
+/* ============================================
+   SCOPE OVERRIDES - ensure sushi theme wins
+   (handles production builds where shared.css may load after)
+   ============================================ */
+
+body.sushi-page {
+  background: var(--bg-darker) !important;
+  color: var(--text-light) !important;
+  font-family: var(--font-sans);
+}
+
+body.sushi-page .navbar {
+  background: rgba(11, 11, 13, 0.85) !important;
+  border-bottom: 1px solid rgba(230, 57, 70, 0.3) !important;
+}
+
+body.sushi-page .hero-sushi {
+  background: linear-gradient(135deg, var(--bg-darker) 0%, #1a1a2e 50%, var(--bg-darker) 100%) !important;
+}
+
+body.sushi-page .card {
+  background: linear-gradient(135deg, var(--bg-dark) 0%, rgba(26, 26, 29, 0.5) 100%) !important;
+  border: 1px solid rgba(230, 57, 70, 0.2) !important;
+  color: var(--text-light) !important;
+}
+
+body.sushi-page .card-image {
+  background: var(--bg-darker-alt) !important;
+}
+
+body.sushi-page .card-image img {
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+body.sushi-page .card-content,
+body.sushi-page .section-contacto {
+  background: transparent !important;
+}
+
+
 /* Background pattern - subtle Japanese texture */
 body::before {
   content: '';
@@ -146,7 +187,7 @@ body::before {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: var(--whatsapp-green);
+  background: var(--whatsapp-green) !important;
   color: white;
   padding: 0.75rem 1.25rem;
   border-radius: 50px;
@@ -485,15 +526,15 @@ body::before {
   position: absolute;
   top: 1.2rem;
   right: 1.2rem;
-  background: linear-gradient(135deg, var(--accent-red), var(--accent-red-light));
-  color: white;
-  padding: 0.4rem 0.8rem;
-  border-radius: 50px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  box-shadow: 0 4px 15px rgba(230, 57, 70, 0.4);
+  background: linear-gradient(135deg, var(--accent-red), var(--accent-red-light)) !important;
+  color: white !important;
+  padding: 0.4rem 0.8rem !important;
+  border-radius: 50px !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  box-shadow: 0 4px 15px rgba(230, 57, 70, 0.4) !important;
 }
 
 .card-title {
