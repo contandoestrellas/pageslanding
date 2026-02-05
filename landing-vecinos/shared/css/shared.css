@@ -398,6 +398,105 @@ img {
   display: none;
   margin-top: 1rem;
   color: #666;
+
+/* ============================================
+   UNAS - Pastel-Luxury Theme (scoped)
+   ============================================ */
+/* Palette:
+   blush #F8D7E8, rose #EFA3C5, crema #FFF6F9, accent plum #6D2E46, text #231A20 */
+.unas-page {
+  --unas-blush: #F8D7E8;
+  --unas-rose: #EFA3C5;
+  --unas-crema: #FFF6F9;
+  --unas-plum: #6D2E46;
+  --unas-text: #231A20;
+  --unas-soft-shadow: 0 12px 30px rgba(109,46,70,0.08);
+}
+
+/* Page background and hero */
+body.unas-page, .unas-page {
+  background: linear-gradient(180deg, rgba(248,215,232,0.4) 0%, rgba(255,246,249,1) 60%);
+  color: var(--unas-text);
+}
+
+/* Hero overlay and stacking fixes */
+.unas-page .hero-unas{position:relative;overflow:visible}
+.unas-page .hero-unas .hero-overlay{position:absolute;inset:0;pointer-events:none;z-index:1;background:radial-gradient(circle at 10% 20%, rgba(239,163,197,0.06), transparent 20%), radial-gradient(circle at 80% 80%, rgba(248,215,232,0.04), transparent 30%)}
+.unas-page .hero-container{position:relative;z-index:2}
+
+.unas-page .hero-unas{
+  padding: 3.5rem 1rem;
+  background: linear-gradient(135deg, rgba(255,246,249,0.8), rgba(248,215,232,0.2));
+}
+.unas-page .hero-container{display:grid;grid-template-columns:1fr;gap:1.2rem;align-items:center;max-width:1100px;margin:0 auto}
+.unas-page .hero-left{padding:1rem}
+.unas-page .display{font-family: 'Playfair Display', serif; font-size:clamp(1.8rem,6vw,3rem); color:var(--unas-plum); margin-bottom:0.6rem}
+.unas-page .lead{color:rgba(35,26,32,0.8);margin-bottom:1rem}
+.unas-page .hero-media img{width:100%;border-radius:14px;box-shadow:0 8px 30px rgba(109,46,70,0.08)}
+
+/* Desktop hero layout */
+@media(min-width:900px){
+  .unas-page .hero-container{grid-template-columns:1fr 460px}
+  .unas-page .hero-media{justify-self:end}
+}
+
+/* Buttons */
+.unas-page .btn-primary{background:linear-gradient(135deg,var(--unas-rose),var(--unas-blush));color:#fff;padding:.9rem 1.2rem;border-radius:40px;border:none;box-shadow:0 8px 18px rgba(239,163,197,0.18);font-weight:600}
+.unas-page .btn-primary:focus{outline:3px solid rgba(109,46,70,0.12)}
+
+/* Cards */
+.unas-page .cards-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+@media(min-width:720px){.unas-page .cards-grid{grid-template-columns:repeat(3,1fr)}}
+.unas-page .card{background:linear-gradient(180deg,rgba(255,246,249,0.9),#fff);border-radius:14px;padding:1.1rem;box-shadow:var(--unas-soft-shadow);border:1px solid rgba(109,46,70,0.04)}
+.unas-page .card-body{display:flex;flex-direction:column;gap:.6rem}
+.unas-page .card-icon{font-size:1.6rem}
+.unas-page .muted{color:rgba(35,26,32,0.6);font-size:.95rem}
+.unas-page .card-price{font-weight:700;color:var(--unas-plum);font-size:1.05rem}
+
+/* Masonry gallery */
+.unas-page .masonry{column-count:2;column-gap:1rem}
+.unas-page .masonry-item{break-inside:avoid;margin-bottom:1rem;border-radius:12px;overflow:hidden}
+.unas-page .masonry-item img{width:100%;display:block}
+@media(min-width:900px){.unas-page .masonry{column-count:3}}
+
+/* Promos grid */
+.unas-page .promos-grid{display:grid;grid-template-columns:1fr;gap:1rem}
+@media(min-width:900px){.unas-page .promos-grid{grid-template-columns:repeat(3,1fr)}}
+.unas-page .promo img{width:100%;height:160px;object-fit:cover;border-top-left-radius:12px;border-top-right-radius:12px}
+.unas-page .promo-body{padding:0.9rem}
+
+/* Testimonials */
+.unas-page .testimonios-grid{display:grid;grid-template-columns:1fr;gap:1rem}
+@media(min-width:900px){.unas-page .testimonios-grid{grid-template-columns:repeat(3,1fr)}}
+.unas-page .testimonial{padding:1rem}
+
+/* Contact cards */
+.unas-page .contact-cards{display:grid;grid-template-columns:1fr;gap:1rem}
+@media(min-width:720px){.unas-page .contact-cards{grid-template-columns:repeat(3,1fr)}}
+.unas-page .contact-card{padding:1rem}
+
+/* FAQ */
+.unas-page details{background:transparent;border-radius:10px;padding:.8rem;margin-bottom:.6rem}
+.unas-page summary{font-weight:600;cursor:pointer}
+
+/* WhatsApp FAB */
+.unas-page .whatsapp-fab{position:fixed;right:18px;bottom:18px;background:linear-gradient(135deg,var(--unas-rose),var(--unas-blush));width:56px;height:56px;border-radius:50px;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(239,163,197,0.2);z-index:1200}
+.unas-page .whatsapp-fab:focus{outline:3px solid rgba(109,46,70,0.12)}
+
+/* Animations */
+.fade-in{opacity:0;transform:translateY(10px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.8,.2,1)}
+.fade-in.in-view{opacity:1;transform:none}
+
+/* Accessibility */
+.unas-page a:focus{outline-offset:3px}
+
+/* Small screens spacing */
+@media(max-width:719px){
+  .unas-page .hero-unas{padding:2rem 1rem}
+  .unas-page .display{font-size:1.6rem}
+  .unas-page .hero-media{margin-top:1rem}
+}
+
   line-height: 1.8;
 }
 

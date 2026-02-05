@@ -1,93 +1,242 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="BellaManos Studio - Diseño de uñas premium. Nail art, extensiones, diseños personalizados preparados por expertos.">
-  <meta name="keywords" content="uñas, nail art, extensiones, diseño de uñas, manicura, pedicura">
-  
-  <!-- Open Graph -->
-  <meta property="og:title" content="BellaManos Studio">
-  <meta property="og:description" content="Diseño de uñas premium y nail art">
-  <meta property="og:type" content="business.business">
-  
-  <title>BellaManos Studio - Diseño de Uñas Premium</title>
-  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BellaManos Studio — Uñas & Beauty</title>
+  <meta name="description" content="BellaManos Studio — Boutique de uñas. Diseño editorial y servicio premium." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="/shared/css/shared.css">
-  <link rel="stylesheet" href="/unas/unas.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared/css/shared.css">
+  <style>
+    /* Page-specific small helpers (kept inline to avoid extra files) */
+    .hero-cta { display:inline-block; }
+  </style>
 </head>
-<body>
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-unas">
+<body class="unas-page">
+  <nav class="navbar">
     <div class="navbar-content">
-      <div class="navbar-logo">💅 BellaManos</div>
-      <ul class="navbar-menu">
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#testimonios">Reseñas</a></li>
-        <li><a href="#cita">Reservar</a></li>
-      </ul>
-      <div class="navbar-cta">
-        <a href="https://wa.me/56944339921?text=Hola%20BellaManos%20Quisiera%20agendar%20una%20cita" class="btn btn-whatsapp">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004c-1.052 0-2.082.315-2.966.916l-.213.126-2.204-.581.592 2.167-.137.219c-.663.899-1.019 1.979-1.019 3.092 0 3.194 2.6 5.79 5.797 5.79 1.548 0 3.003-.6 4.095-1.694 1.091-1.093 1.695-2.548 1.695-4.095 0-3.197-2.6-5.794-5.796-5.794"/>
-          </svg>
-          Agendar
-        </a>
+      <div class="navbar-logo">
+        <img src="../shared/assets/logo/sakura-logo.webp" alt="BellaManos" style="width:36px;height:36px;border-radius:8px;object-fit:cover">
+        <span>BellaManos</span>
       </div>
+      <ul class="navbar-menu">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#galeria">Diseños</a></li>
+        <li><a href="#promos">Promos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero hero-unas">
+  <header class="hero hero-unas">
+    <div class="hero-overlay"></div>
     <div class="hero-container">
-      <div class="hero-content">
-        <h1>Belleza en Cada Detalle</h1>
-        <p>Diseño de uñas premium, nail art personalizado y extensiones. Técnicas modernas y productos de calidad internacional.</p>
-        <a href="#galeria" class="btn btn-unas">Ver Diseños</a>
+      <div class="hero-left">
+        <h1 class="display">Belleza de Autor para tus Uñas</h1>
+        <p class="lead">BellaManos Studio — servicios boutique, acabados impecables y diseños a la medida.</p>
+        <a class="btn btn-primary hero-cta" href="https://wa.me/56944339921?text=Hola!%20Quiero%20agendar%20una%20hora%20en%20BellaManos%20Studio%20%F0%9F%91%85" aria-label="WhatsApp BellaManos">Agendar por WhatsApp</a>
       </div>
-      <div class="hero-image">
-        <img src="/shared/assets/unas/hero.svg" alt="BellaManos - Nail Art">
-      </div>
+      <figure class="hero-media">
+        <picture>
+          <source srcset="../shared/assets/unas/hero.webp" type="image/webp">
+          <img src="../shared/assets/unas/hero.svg" alt="Manos con manicure BellaManos"/>
+        </picture>
+      </figure>
     </div>
-  </section>
+  </header>
 
-  <!-- GALERÍA -->
-  <section id="galeria" class="section section-galeria">
-    <div class="section-container">
+  <main>
+    <section id="servicios" class="section">
       <div class="section-header">
-        <h2>Nuestros Diseños</h2>
-        <p>Una colección de diseños que reflejan tu personalidad y estilo</p>
+        <h2>Servicios</h2>
+        <p>Tratamientos boutique pensados para cuidar y embellecer.</p>
       </div>
-      
       <div class="cards-grid">
-        <div class="card card-unas">
-          <div class="card-image">
-            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-              <rect width="400" height="300" fill="#f5e6f0"/>
-              <rect x="80" y="60" width="50" height="120" fill="#e8c1d9" stroke="#d4a5c1" stroke-width="2"/>
-              <rect x="150" y="50" width="50" height="140" fill="#dba5c9" stroke="#c989b5" stroke-width="2"/>
-              <rect x="220" y="60" width="50" height="120" fill="#e8c1d9" stroke="#d4a5c1" stroke-width="2"/>
-              <circle cx="105" cy="50" r="8" fill="#ffd4e5"/>
-              <circle cx="175" cy="35" r="8" fill="#ffd4e5"/>
-              <circle cx="245" cy="50" r="8" fill="#ffd4e5"/>
-            </svg>
+        <article class="card fade-in" data-anim>
+          <div class="card-body">
+            <div class="card-icon">💅</div>
+            <h4>Manicure Clásico</h4>
+            <p class="muted">Duración: 45 min</p>
+            <p class="card-price" data-price="12990"></p>
           </div>
-          <div class="card-content">
-            <span class="card-badge badge-nuevo">TRENDING</span>
-            <h4 class="card-title">French Ombré</h4>
-            <p class="card-description">Degrade suave y elegante. Técnica francesa con efecto ombré</p>
-            <p class="card-price" data-price="18900"></p>
-            <a href="https://wa.me/56944339921?text=Quiero%20el%20diseño%20French%20Ombré" class="btn btn-unas-outline">Agendar</a>
+        </article>
+
+        <article class="card fade-in" data-anim>
+          <div class="card-body">
+            <div class="card-icon">💎</div>
+            <h4>Manicure Premium</h4>
+            <p class="muted">Duración: 60 min</p>
+            <p class="card-price" data-price="18000"></p>
+          </div>
+        </article>
+
+        <article class="card fade-in" data-anim>
+          <div class="card-body">
+            <div class="card-icon">✨</div>
+            <h4>Gel & Diseño</h4>
+            <p class="muted">Duración: 75 min</p>
+            <p class="card-price" data-price="25990"></p>
+          </div>
+        </article>
+
+        <article class="card fade-in" data-anim>
+          <div class="card-body">
+            <div class="card-icon">🌿</div>
+            <h4>Spa de Manos</h4>
+            <p class="muted">Duración: 30 min</p>
+            <p class="card-price" data-price="8990"></p>
+          </div>
+        </article>
+
+        <article class="card fade-in" data-anim>
+          <div class="card-body">
+            <div class="card-icon">🎨</div>
+            <h4>Diseño Artístico</h4>
+            <p class="muted">Duración: 90 min</p>
+            <p class="card-price" data-price="32990"></p>
+          </div>
+        </article>
+
+        <article class="card fade-in" data-anim>
+          <div class="card-body">
+            <div class="card-icon">🕊️</div>
+            <h4>Retiro & Mantenimiento</h4>
+            <p class="muted">Duración: 40 min</p>
+            <p class="card-price" data-price="11990"></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="galeria" class="section section-muted">
+      <div class="section-header">
+        <h2>Diseños</h2>
+        <p>Galería de nuestros trabajos — inspiración y tendencia.</p>
+      </div>
+      <div class="masonry">
+        <figure class="masonry-item"><img src="../shared/assets/unas/gallery-01.webp" alt=""></figure>
+        <figure class="masonry-item"><img src="../shared/assets/unas/gallery-02.webp" alt=""></figure>
+        <figure class="masonry-item"><img src="../shared/assets/unas/gallery-03.webp" alt=""></figure>
+        <figure class="masonry-item"><img src="../shared/assets/unas/gallery-04.webp" alt=""></figure>
+        <figure class="masonry-item"><img src="../shared/assets/unas/gallery-05.webp" alt=""></figure>
+        <figure class="masonry-item"><img src="../shared/assets/unas/gallery-06.webp" alt=""></figure>
+      </div>
+    </section>
+
+    <section id="promos" class="section">
+      <div class="section-header">
+        <h2>Promos del mes</h2>
+      </div>
+      <div class="promos-grid">
+        <div class="promo card fade-in" data-anim>
+          <img src="../shared/assets/unas/promo-01.webp" alt="Promo 1">
+          <div class="promo-body">
+            <h4>Combo Primavera</h4>
+            <p class="muted">Manicure + Spa</p>
+            <p class="card-price" data-price="15990"></p>
           </div>
         </div>
 
-        <div class="card card-unas card-destacado">
-          <div class="card-image">
+        <div class="promo card fade-in" data-anim>
+          <img src="../shared/assets/unas/promo-02.webp" alt="Promo 2">
+          <div class="promo-body">
+            <h4>Descuento Nuevas Clientas</h4>
+            <p class="muted">-15% en tu primera visita</p>
+            <p class="card-price" data-price="10990"></p>
+          </div>
+        </div>
+
+        <div class="promo card fade-in" data-anim>
+          <img src="../shared/assets/unas/promo-03.webp" alt="Promo 3">
+          <div class="promo-body">
+            <h4>Pack Evento</h4>
+            <p class="muted">Diseños para eventos</p>
+            <p class="card-price" data-price="28990"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonios" class="section section-muted">
+      <div class="section-header">
+        <h2>Testimonios</h2>
+      </div>
+      <div class="testimonios-grid">
+        <blockquote class="testimonial card fade-in" data-anim>
+          <p>"Excelente atención y detalle. Mis uñas duraron impecables por semanas."</p>
+          <footer>— Camila R. <span class="stars">★★★★★</span></footer>
+        </blockquote>
+
+        <blockquote class="testimonial card fade-in" data-anim>
+          <p>"El estudio tiene un ambiente precioso y profesional."</p>
+          <footer>— Valentina M. <span class="stars">★★★★★</span></footer>
+        </blockquote>
+
+        <blockquote class="testimonial card fade-in" data-anim>
+          <p>"Diseños únicos y muy buen cuidado en el proceso."</p>
+          <footer>— Natalia P. <span class="stars">★★★★★</span></footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="section-header">
+        <h2>Preguntas Frecuentes</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>¿Necesito pedir hora con anticipación?</summary>
+          <p>Sí, recomendamos agendar para asegurar tu horario preferido.</p>
+        </details>
+        <details>
+          <summary>¿Aceptan diseños personalizados?</summary>
+          <p>Por supuesto — trae referencia y lo conversamos en tu consulta.</p>
+        </details>
+        <details>
+          <summary>¿Qué método de pago aceptan?</summary>
+          <p>Efectivo y tarjetas en el local.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="contacto" class="section section-contacto">
+      <div class="contact-cards">
+        <div class="contact-card card">
+          <h4>Horarios</h4>
+          <p class="muted">Lun - Vie: 10:00 - 20:00<br>Sáb: 10:00 - 18:00</p>
+        </div>
+        <div class="contact-card card">
+          <h4>Ubicación</h4>
+          <p class="muted">Providencia, Santiago</p>
+        </div>
+        <div class="contact-card card">
+          <h4>Contacto</h4>
+          <p><a href="https://wa.me/56944339921?text=Hola!%20Quiero%20agendar%20una%20hora%20en%20BellaManos%20Studio%20%F0%9F%91%85">+56 9 4433 9921 (WhatsApp)</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp-fab" href="https://wa.me/56944339921?text=Hola!%20Quiero%20agendar%20una%20hora%20en%20BellaManos%20Studio%20%F0%9F%91%85" aria-label="WhatsApp BellaManos">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden>
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347" fill="#fff"/>
+    </svg>
+  </a>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>© 2025 BellaManos Studio</div>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../shared/js/shared.js"></script>
+</body>
             <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
               <rect width="400" height="300" fill="#ffc0e7"/>
               <rect x="80" y="60" width="50" height="120" fill="#ff69b4" stroke="#ff1493" stroke-width="2"/>

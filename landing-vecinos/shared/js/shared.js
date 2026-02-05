@@ -97,3 +97,37 @@ function setupNavbarScroll() {
 }
 
 document.addEventListener('DOMContentLoaded', setupNavbarScroll);
+
+// Enhance: setup WhatsApp FAB (if present) and format prices already done above
+document.addEventListener('DOMContentLoaded', function() {
+  // Ensure prices formatted (idempotent if run twice)
+  document.querySelectorAll('[data-price]').forEach(element => {
+    const price = parseFloat(element.dataset.price);
+    if (!isNaN(price)) element.textContent = formatCLP(price);
+  });
+
+  // WhatsApp FAB: add focus/aria improvements
+  const fabs = document.querySelectorAll('.whatsapp-fab, .btn-whatsapp');
+  fabs.forEach(el => {
+    el.setAttribute('role', 'link');
+    if (!el.getAttribute('aria-label')) el.setAttribute('aria-label', 'WhatsApp');
+  });
+
+  // Fade-in on scroll (respect prefers-reduced-motion)
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!prefersReduced && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold: 0.12});
+
+    document.querySelectorAll('[data-anim], .fade-in').forEach(node => io.observe(node));
+  } else {
+    // fallback: just show
+    document.querySelectorAll('[data-anim], .fade-in').forEach(n => n.classList.add('in-view'));
+  }
+});
